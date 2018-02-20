@@ -36,3 +36,6 @@ RUN apt-get update \
 # gym from from https://github.com/openai/gym#installing-everything
 RUN pip3 install --no-cache-dir \
   gym==0.9.7
+
+# copy notebook examples
+COPY ./lu-dl-course-examples /notebooks/lu-dl-course-examples
