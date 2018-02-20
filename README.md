@@ -6,6 +6,13 @@ Contains:
 - gym 0.9.7
 
 # Start CPU only container
-1. `$ docker run -it -p 8888:8888 renarl/lu-dl-course`    
+1. `$ docker run -it -v "$(PWD):/notebooks/host_dir" -p 8888:8888 renarl/lu-dl-course`    
 1. Copy access token `token` from the terminal output
 1. Go to your browser on http://localhost:8888/?token=`token`
+
+# Notes
+## Preserving your notebooks between sessions
+To preserve your work between sessions, save it in `host_dir`.
+
+## Course examples
+The examples from the LU DL course are in `lu-dl-course-examples`
