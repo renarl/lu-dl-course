@@ -1,2 +1,1 @@
-# lu-dl-course
-Environment used in the Deep Learning course at University of Latvia
+Deep Learning environment used for examples and homework assignments in the Deep Learning course at University of Latvia
