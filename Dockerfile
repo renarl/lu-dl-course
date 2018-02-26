@@ -37,5 +37,9 @@ RUN apt-get update \
 RUN pip3 install --no-cache-dir \
   gym==0.9.7
 
+# dependencies for udacity course examples
+RUN pip3 install --no-cache-dir \
+  imageio==2.2.0
+
 # copy notebook examples
 COPY ./lu-dl-course-examples /notebooks/lu-dl-course-examples
