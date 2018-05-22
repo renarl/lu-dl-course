@@ -35,12 +35,11 @@ RUN apt-get update \
 
 # gym from from https://github.com/openai/gym#installing-everything
 RUN pip3 install --no-cache-dir \
-  gym==0.9.7
+  gym[all]==0.9.7
 
 # dependencies for udacity course examples
 RUN pip3 install --no-cache-dir \
   imageio==2.2.0
-  gym[all]==0.9.7
 
 # copy notebook examples
 COPY ./lu-dl-course-examples /notebooks/lu-dl-course-examples
