@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.6.0-rc1-py3
+FROM tensorflow/tensorflow:1.9.0-py3
 
 
 ###########
@@ -7,8 +7,8 @@ FROM tensorflow/tensorflow:1.6.0-rc1-py3
 
 # pytorch from http://pytorch.org
 RUN pip3 install --no-cache-dir \
-  http://download.pytorch.org/whl/cpu/torch-0.3.1-cp35-cp35m-linux_x86_64.whl \
-  torchvision==0.2.0
+  http://download.pytorch.org/whl/cpu/torch-0.4.0-cp36-cp36m-linux_x86_64.whl \
+  torchvision==0.2.1
 
 
 ##############
@@ -35,7 +35,7 @@ RUN apt-get update \
 
 # gym from from https://github.com/openai/gym#installing-everything
 RUN pip3 install --no-cache-dir \
-  gym[all]==0.9.7
+  gym[all]==0.10.5
 
 # dependencies for udacity course examples
 RUN pip3 install --no-cache-dir \
