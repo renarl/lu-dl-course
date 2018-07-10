@@ -7,7 +7,7 @@ FROM tensorflow/tensorflow:1.9.0-py3
 
 # pytorch from http://pytorch.org
 RUN pip3 install --no-cache-dir \
-  http://download.pytorch.org/whl/cpu/torch-0.4.0-cp36-cp36m-linux_x86_64.whl \
+  http://download.pytorch.org/whl/cpu/torch-0.4.0-cp35-cp35m-linux_x86_64.whl \
   torchvision==0.2.1
 
 
